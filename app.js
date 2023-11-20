@@ -76,11 +76,11 @@ if (n1 > n2) {
   }
 }
 
-if (n1 > n2 && n1 > n3) {
+if (n1 >= n2 && n1 >= n3) {
   console.log("Biggest:", n1);
-} else if (n2 > n1 && n2 > n3) {
+} else if (n2 >= n1 && n2 >= n3) {
   console.log("Biggest:", n2);
-} else if (n3 > n1 && n3 > n2) {
+} else if (n3 >= n1 && n3 >= n2) {
   console.log("Biggest:", n3);
 }
 
@@ -92,3 +92,9 @@ if (n3 >= biggest) {
   biggest = n3;
 }
 console.log(`${biggest} is biggest`);
+
+const grade1 = prompt("please enter your grade:");
+
+grade1 >= 50 ? console.log("SUCCEED") : console.log("FAILED");
+const score = grade1 >= 50 ? "PASSED" : "FAILED";
+console.log(score);
