@@ -1,6 +1,6 @@
-let number = prompt("enter a number");
-console.log(typeof number);
-console.log(number++);
+// let number = prompt("enter a number");
+// console.log(typeof number);
+// console.log(number++);
 
 console.log(Number("123"));
 console.log(Number("12.3"));
@@ -31,8 +31,36 @@ const calismaSuresi = prompt("Calisma Suresi");
 let maas = prompt("Maasini giriniz");
 
 if (calismaSuresi >= 10) {
-  maas = maas * 1.1;
+  maas = Math.round(maas * 1.1);
   console.log("Zamli maasiniz:", maas);
 } else {
   console.log("Uzgunuz maasiniza zam yapamiyoruz", maas);
+}
+console.log("bye bye");
+
+if (calismaSuresi >= 10) {
+  maas = Math.round(maas * 1.1);
+  console.log("Zamli maasiniz:", maas);
+}
+console.log("bye bye");
+
+const grade = prompt("please enter your grade:");
+let result = "";
+if (grade < 0) {
+  console.log("Grade can not be small than zero");
+} else if (grade < 40) {
+  result = "FF";
+} else if (grade <= 50) {
+  result = "DD";
+} else if (grade <= 65) {
+  result = "CC";
+} else if (grade <= 89) {
+  result = "BB";
+} else if (grade <= 100) {
+  result = "AA";
+} else {
+  console.log("Grade can not be bigger than 100");
+}
+if (result != "") {
+  console.log(`Your score:${result}`);
 }
