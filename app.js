@@ -2,50 +2,50 @@
 // console.log(typeof number);
 // console.log(number++);
 
-console.log(Number("123"));
-console.log(Number("12.3"));
-console.log(Number("0"));
-console.log(Number(" "));
-console.log(Number(""));
-console.log(Number(null));
+// console.log(Number("123"));
+// console.log(Number("12.3"));
+// console.log(Number("0"));
+// console.log(Number(" "));
+// console.log(Number(""));
+// console.log(Number(null));
 
-const dolar = "1000";
-const euro = "2000";
+// const dolar = "1000";
+// const euro = "2000";
 
-const totalMoney = Number(dolar) + +euro;
+// const totalMoney = Number(dolar) + +euro;
 
-console.log(totalMoney);
+// console.log(totalMoney);
 
-const euroInt = parseInt(euro);
-console.log(euroInt);
-const dolarFloat = parseFloat(dolar);
-console.log(dolarFloat);
+// const euroInt = parseInt(euro);
+// console.log(euroInt);
+// const dolarFloat = parseFloat(dolar);
+// console.log(dolarFloat);
 
-console.log(parseFloat(null));
-console.log(parseFloat(""));
+// console.log(parseFloat(null));
+// console.log(parseFloat(""));
 
-const myNum = 2000.5;
-console.log(String(myNum));
+// const myNum = 2000.5;
+// console.log(String(myNum));
 
-const calismaSuresi = prompt("Calisma Suresi");
-let maas = prompt("Maasini giriniz");
+// const calismaSuresi = prompt("Calisma Suresi");
+// let maas = prompt("Maasini giriniz");
 
-if (calismaSuresi >= 10) {
-  maas = Math.round(maas * 1.1);
-  console.log("Zamli maasiniz:", maas);
-} else {
-  console.log("Uzgunuz maasiniza zam yapamiyoruz", maas);
-}
-console.log("bye bye");
+// if (calismaSuresi >= 10) {
+//   maas = Math.round(maas * 1.1);
+//   console.log("Zamli maasiniz:", maas);
+// } else {
+//   console.log("Uzgunuz maasiniza zam yapamiyoruz", maas);
+// }
+// console.log("bye bye");
 
-if (calismaSuresi >= 10) {
-  maas = Math.round(maas * 1.1);
-  console.log("Zamli maasiniz:", maas);
-}
-console.log("bye bye");
+// if (calismaSuresi >= 10) {
+//   maas = Math.round(maas * 1.1);
+//   console.log("Zamli maasiniz:", maas);
+// }
+// console.log("bye bye");
 
 const grade = prompt("please enter your grade:");
-let result = "";
+let result = null;
 if (grade < 0) {
   console.log("Grade can not be small than zero");
 } else if (grade < 40) {
@@ -61,6 +61,34 @@ if (grade < 0) {
 } else {
   console.log("Grade can not be bigger than 100");
 }
-if (result != "") {
+
+if (result != null) {
   console.log(`Your score:${result}`);
 }
+
+const n1 = +prompt("Num1:");
+const n2 = +prompt("Num2:");
+const n3 = +prompt("Num3:");
+
+if (n1 > n2) {
+  if (n1 > n3) {
+    console.log("Biggest:", n1);
+  }
+}
+
+if (n1 > n2 && n1 > n3) {
+  console.log("Biggest:", n1);
+} else if (n2 > n1 && n2 > n3) {
+  console.log("Biggest:", n2);
+} else if (n3 > n1 && n3 > n2) {
+  console.log("Biggest:", n3);
+}
+
+let biggest = n1;
+if (n2 >= biggest) {
+  biggest = n2;
+}
+if (n3 >= biggest) {
+  biggest = n3;
+}
+console.log(`${biggest} is biggest`);
